@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 133, 163, 0.3);
+
+    font-family: 'Zen Loop', cursive;
+}
+
+#title {
+    color: rgba(0, 133, 163, 0.3);
+    border: 2px solid currentColor;
+    text-align: center;
+}
+
+.subtitle {
+    color: rgb(4, 184, 224);
+}
+
+#service-image {
+    height: 400px;
+    width: 70%;
+    /* background-repeat: no-repeat; */
+    background: radial-gradient(circle, red 20%, blue 40%, green 40%);
+    border: 10px solid black;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    height: 300px;
+    /* flex-direction: column-reverse; */
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+
+.grid-container {
+    background-color: white;
+    margin: 10px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 150px;
+    grid-template-rows: auto auto;
+    /* grid-row-gap: 100px; */
+    /* justify-content: space-around;
+    align-content: space-around; */
+}
+
+.grid-item {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#about-me {
+    animation-name: translate-animation;
+    animation-duration: 2s; 
+    animation-timing-function: linear;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.submit-button {
+    background-color:rgba(0, 133, 163, 1);
+    border-radius: 10px;
+    border-color:rgb(4, 184, 224);
+    text-decoration: none;
+    margin: 20px 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.submit-button:hover {
+
+    background: rgba(0, 133, 163, 0.5);
+    padding: 20px 30px;
+    transform: matrix(1, 0.45, 0.45, 2, 100, 50);
+}
+
+.form-input {
+    margin-bottom: 10px;
+}
+
+@keyframes translate-animation {
+    0% {
+        background: red;
+        transform: translate(0px, 0px);
+    }
+    50% {
+        background: yellow;
+        transform: translate(5px, 15px); 
+    }
+    100% {
+        background: black;
+        transform: translate(20px, 30px);
+    }
+}
+

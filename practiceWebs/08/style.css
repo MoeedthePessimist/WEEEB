@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Georama', sans-serif;
+}
+body::before {
+    position: fixed;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*   background: var(--color-darkblue); */
+    z-index: -1;
+    background-image: linear-gradient(
+        115deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.4)
+        ),        
+        url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p, button, label, option {
+    text-transform: capitalize;
+}
+
+p, label, button {
+    color: #ececec;
+}
+
+input:focus, textarea:focus, select:focus{
+    border: 2px solid rgb(35, 58, 176);
+}
+
+button {
+    background: rgba(35, 58, 176, 0.6);
+    border: none;
+    transition: background 0.6s ease;
+    font-size: 2ch;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background: rgba(35, 58, 176, 1);
+}
+
+option {
+    font-family: 'Georama', sans-serif;
+}
+
+form {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+input, textarea, select {
+    /* border: none; */
+    border-radius: 0.25rem;
+}
+
+.inc-height, button {
+    height: 2rem;
+}
+
+.form-container {
+    width:100%;
+    /* background: white; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+

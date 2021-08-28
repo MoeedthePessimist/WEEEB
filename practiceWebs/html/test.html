@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method='POST'>
+        <label for="f_name">First name: </label>
+        <input type="text" placeholder="Hi" name="f_name"><br>
+        <label for="l_name">Last name: </label>
+        <input type="text" placeholder="Bye" name="l_name"><br>
+        <label for="email">Email: </label>
+        <input type="email" required name = 'email'><br>
+        <label for="password">Password: </label>
+        <input type="password" required name = 'password'><br>
+        <label for="birth">Birthday: </label>
+        <input type="date" required name = 'birth'><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name = 'gender' value="male"> Male
+        <input type="radio" name = 'gender' value='female'> Female
+        <input type="radio" name = 'gender' value='other'> Other<br>
+        <label for="pets">Pets</label>
+        <input type="checkbox" name="pets"> Cats
+        <input type="checkbox" name='pets'> Dogs <br>
+        <label for="cars">Cars</label>
+        <select name="cars" id="cars">
+            <option value="nil" disabled selected>Select car</option>
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="ferrari">Ferrari</option>
+        </select><br> 
+        <input type="submit" value="register">
+        <input type="reset">
+    </form>  
+</body>
+</html>

@@ -1,0 +1,469 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Palette+Mosaic&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Palette+Mosaic&family=Teko:wght@700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Palette+Mosaic&family=Teko:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Knewave&family=Lobster&family=Palette+Mosaic&family=Teko:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* nav bar */
+nav {
+    overflow-y: hidden;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 8vh;
+    z-index: 999;
+    /* max-height: 10vh; */
+    width: 100%;
+    background: #121212;
+    font-family: 'Palette Mosaic', cursive;
+    letter-spacing: 5px;
+    /* position: fixed;
+    overflow: hidden; */
+}
+
+.title a{
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+}
+
+.links a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    transition: all 0.7s ease;
+}
+
+.links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;    
+}
+
+.menu div{
+    height: 3px;
+    width: 20px;
+    background: white;
+    display: flex;
+    margin: 5px;
+}
+
+.menu {
+    /* padding: 1.1rem; */
+    /* border: none; */
+    display: none;
+    cursor: pointer;
+}
+
+.links a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.links a:focus {
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+}
+
+@media screen and (max-width: 1000px){
+    .links {
+        width: 50%;
+    }
+    .links a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: block;
+    }
+
+    .links{
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 40vh;
+        transform: translateX(100%);
+        transition: transform 0.8s ease;
+        z-index: 999;
+    }
+    
+    .links li{
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 14px;
+    }
+
+    .title a {
+        font-size: 13px;
+    }
+
+    .links a {
+        font-size: 12px;
+    }
+}
+
+.links-show {
+    transform: translateX(0%);
+}
+
+@keyframes animateLinksShow {
+    from{
+        opacity: 0;
+        transform: translateX(75%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 4em;
+    color: black;
+    
+}
+
+
+
+h2 {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1.2ch;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    /* font-size: 20px; */
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    margin: 1.2rem 0;
+}
+
+.carousel {
+    background: url(https://wallpaperaccess.com/full/2518032.png) center/cover no-repeat fixed;
+    animation: slider 20s ease-out infinite both;
+    -webkit-filter: blur(1.2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.logo img{
+    /* border: none; */
+    width: 40rem;
+    z-index: 5;
+    margin: 0 auto;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+
+.logo {
+    /* background: white; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-parent {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+
+.enableblur > * {
+    filter: blur(1.2px);
+}
+
+.disableblur {
+    filter: blur(0);
+}
+
+@keyframes slider {
+    0% {
+        background: url(https://wallpaperaccess.com/full/2518032.png) center/cover no-repeat fixed;
+    }20% {
+        background: url(https://wallpaperaccess.com/full/2518030.png) center/cover no-repeat fixed;
+    }40% {
+        background: url(https://wallpaperaccess.com/full/2518024.jpg) center/cover no-repeat fixed;
+    }60% {
+        background: url(https://i.imgur.com/ASIxq5F.png) center/cover no-repeat fixed;
+    }80% {
+        background: url(https://i.redd.it/m7rqzgi9f7v01.jpg) center/cover no-repeat fixed;
+    }100% {
+        background: url(https://i.imgur.com/GZtFxNu.png) center/cover no-repeat fixed;
+    }
+
+}
+
+
+.learn-more {
+    background: #697184;
+    padding: 1.5ch 2ch;
+    border-radius: .25rem;
+    font-family: 'Lobster', cursive;
+    transition: background 0.7s ease-out, color 0.7s ease-out; 
+    text-transform: capitalize;
+}
+
+.learn-more:hover {
+    background: #ECE9E6;
+    color: #121212;
+}
+
+.card {
+    background-size: cover;
+    color: #ece9e6;    
+    padding: 0rem 0 0;
+    max-width: 90ch;
+    overflow: hidden;
+    border-radius: .25rem;
+    transition: transform 0.5s ease;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-content {
+    --padding: 1.5rem;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / .3) 10%,
+        hsl(0 0% 0% / 1)
+    );
+    padding: var(--padding);
+    transform: translateY(70%);
+    transition: transform 0.5s ease-out 0.5s;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 0;
+}
+
+
+.title {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    background: #697184;
+    width: calc(200% + var(--padding));
+    left: calc(var(--padding) * -1 );
+    bottom: 0;
+    transform-origin: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.card:hover .title::after {
+    transform: scaleX(1);
+}
+
+/* biography section */
+.biography-card {
+    background: url(https://i.redd.it/m7rqzgi9f7v01.jpg) center/cover no-repeat;
+}
+
+.biography {
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: fixed;  */
+    background-attachment: fixed;
+}
+
+.biography .section-title {
+    margin: 30px;
+    color: #232526;
+}
+
+/* music section */
+
+.music .section-title {
+    color: #ECE9E6;
+    margin: 30px;
+}
+
+.music-card {
+    background: url(https://i.imgur.com/ASIxq5F.png) center/cover no-repeat;
+
+}
+
+.music-card .card-content {
+    transform: translateY(75%);
+}
+
+.music {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: fixed; */
+    background-attachment: fixed;
+}
+
+.music-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: white; */
+}
+
+.music-links a{
+    margin: 10px 15px;
+    transition: padding 0.5s ease, font-size 0.5s ease;
+}
+
+.music-links a:hover {
+    /* transform: translateY(-25%); */
+    padding-bottom: 10px;
+    font-size: 3ch;
+}
+
+.fab {
+    transition: color 0.4s ease;
+}
+
+.fa-spotify:hover {
+    color: lime;
+}
+.fa-apple:hover {
+    color: silver;
+}
+.fa-soundcloud:hover {
+    color: #FE5000;
+}
+.fa-youtube:hover {
+    color: red;
+}
+
+
+/* 365x24 section */
+.thankyou {
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 650px) {
+    .music-card .card-content {
+        transform: translateY(80%);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .music-card .card-content {
+        transform: translateY(85%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-content {
+        transform: translateY(75%);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .card-content {
+        transform: translateY(80%);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card-content {
+        transform: translateY(85%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-content {
+        transform: translateY(90%);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card-content {
+        transform: translateY(85%);
+    }
+
+    .learn-more {
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 0.5ch 0.6ch;
+    }
+
+    h2 {
+        font-family: 'Teko', sans-serif;
+        letter-spacing: 1.2ch;
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-family: 'Lobster', cursive;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    
+    p {
+        font-family: 'Dancing Script', cursive;
+        font-size: 10px;
+    }
+
+}
+
