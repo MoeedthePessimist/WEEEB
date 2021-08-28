@@ -1,0 +1,13 @@
+.bg-myNav{
+    background-color: #3e4543;
+}
+
+.navbar_title{
+    opacity: 0.5;
+    transition:all 0.6s ease;
+}
+
+.navbar_title:hover{
+    opacity: 1;
+}
+

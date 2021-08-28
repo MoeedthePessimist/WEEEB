@@ -1,0 +1,14 @@
+.header {
+    padding: 20px;
+    object-fit: contain;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header_signUpForm{
+    display: flex;
+    flex-direction: column;
+}

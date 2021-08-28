@@ -1,0 +1,111 @@
+.btn-primary {
+    background-color:#3e4543;
+    opacity: 0.6;
+    border: none;
+    border-color: transparent;
+    width: 100px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover{
+    background-color: #3e4543;
+    opacity: 1;
+}
+
+
+.form-control {
+    border: none;
+    background-color: #a8b4ae;
+    opacity: 0.8;
+    border: none;
+    border-color: transparent;
+    border-width: 0;
+    stroke: none;
+    border-style: none;
+    border-color: #a8b4ae;
+}
+
+.form-control:focus{
+    opacity: 1;
+    background-color: #a8b4ae;
+    border: none;
+    border-color: transparent;
+    border-width: 0;
+}
+.form-control::selection{
+    border: none;
+    border-color: transparent;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+    position: relative;
+}
+
+.login::before{
+    content: "";
+    background-image: url(../images/pexels-arthouse-studio-4338020.jpg);
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    opacity: 0.5;
+}
+
+.login_head {
+    margin-bottom: 30px;
+    color: #3e4543;
+    opacity: 0.8;
+}
+
+.register_lbl{
+    color: #3e4543;
+    
+}
+
+.register_lbl > span {
+    opacity: 0.8;
+    
+}
+
+.register_lbl:hover > span {
+    cursor: pointer;
+    opacity: 0.9;
+    color: yellow;
+}
+
+.form-label{
+    margin-bottom: 10px;
+    color: #3e4543;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+
+.container {
+    border-radius: 0;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    color: #ADADAD;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #dfe0e3;
+    border: 1px solid ;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+

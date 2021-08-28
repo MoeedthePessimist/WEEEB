@@ -1,0 +1,25 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.login_logo {
+    width: 50%;
+}
+
+.login_link {
+    padding: 20px;
+    background-color: #1db954;
+    border-radius: 99px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: 200ms color ease-in;
+}
+
+.login_link:hover{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,9 @@
+ {basket.map(item => (
+                        <CheckoutProduct
+                            /*id = {item.id}
+                            title = {item.title}
+                            image = {item.image}
+                            rating = {item.rating}
+                    price = {item.price}*/
+                        />    
+                    ))}

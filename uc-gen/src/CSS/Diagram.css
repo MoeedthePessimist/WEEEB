@@ -1,0 +1,48 @@
+.sidebarLeft {
+    overflow-y: scroll;
+    background-color: #b3bdb9;
+    position: center;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease;
+    
+    justify-content: space-between;
+    
+}
+
+.main { 
+    flex: 1 1 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown_menu {
+    width: 150px;
+    margin-left: 35px;
+    border:none;
+    font-size: smaller;
+    background-color: #303138;
+    color: white;
+    height: 30px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+
+
+.diagram {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
